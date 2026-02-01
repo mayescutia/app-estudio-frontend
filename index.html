@@ -3831,7 +3831,10 @@ Responde SOLO en JSON:
                 });
                 
                 const data = await response.json();
-                const jsonMatch = data.content[0].text.match(/\{[\s\S]*\}/);
+               console.log("RESPUESTA IA:", data);
+alert(data.choices[0].message.content);
+return;
+
                 
                 if (jsonMatch) {
                     const caseData = JSON.parse(jsonMatch[0]);
@@ -3924,7 +3927,10 @@ Proporciona feedback constructivo en JSON:
                 });
                 
                 const data = await response.json();
-                const jsonMatch = data.content[0].text.match(/\{[\s\S]*\}/);
+               console.log("RESPUESTA IA:", data);
+alert(data.choices[0].message.content);
+return;
+
                 
                 if (jsonMatch) {
                     const feedbackData = JSON.parse(jsonMatch[0]);
@@ -4009,7 +4015,10 @@ Proporciona feedback constructivo en JSON:
                 });
                 
                 const data = await response.json();
-                const aiMessage = data.content[0].text;
+                console.log("RESPUESTA IA:", data);
+alert(data.choices[0].message.content);
+return;
+
                 
                 document.getElementById(loadingId).remove();
                 addChatBubble(aiMessage, 'assistant');
@@ -4290,7 +4299,10 @@ Proporciona feedback constructivo en JSON:
                 });
                 
                 const data = await response.json();
-                const match = data.content[0].text.match(/\{[\s\S]*\}/);
+                console.log("RESPUESTA IA:", data);
+alert(data.choices[0].message.content);
+return;
+
                 
                 if (match) {
                     const caseData = JSON.parse(match[0]);
@@ -4336,7 +4348,10 @@ Proporciona feedback constructivo en JSON:
                 });
                 
                 const data = await response.json();
-                const match = data.content[0].text.match(/\{[\s\S]*\}/);
+                console.log("RESPUESTA IA:", data);
+alert(data.choices[0].message.content);
+return;
+
                 
                 if (match) {
                     const result = JSON.parse(match[0]);
@@ -4381,7 +4396,10 @@ Proporciona feedback constructivo en JSON:
                 });
                 
                 const data = await response.json();
-                const aiMsg = data.content[0].text;
+                console.log("RESPUESTA IA:", data);
+alert(data.choices[0].message.content);
+return;
+
                 
                 document.getElementById(id).remove();
                 addProAIMessage(aiMsg, 'assistant');
