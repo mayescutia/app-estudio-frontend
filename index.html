@@ -2010,7 +2010,7 @@
             section.classList.remove('disabled');
             resultDiv.innerHTML = '<div class="loading"><div class="spinner"></div>Analizando las coincidencias y diferencias...</div>';
 
-            const data = await fetchWithRetry("https://api.anthropic.com/v1/messages", {
+            const data = await fetchWithRetry("https://ia-estudio-backend.vercel.app/api/analyze", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -2232,7 +2232,7 @@ Responde en formato JSON:
             section.classList.remove('disabled');
             resultDiv.innerHTML = '<div class="loading"><div class="spinner"></div>Identificando puntos clave para repasar...</div>';
 
-            const data = await fetchWithRetry("https://api.anthropic.com/v1/messages", {
+            const data = await fetchWithRetry("https://ia-estudio-backend.vercel.app/api/analyze", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -2267,7 +2267,7 @@ Crea una lista clara y concisa de los conceptos que necesitan más atención. Re
             section.classList.remove('disabled');
             cardsDiv.innerHTML = '<div class="loading"><div class="spinner"></div>Creando tarjetas de estudio personalizadas...</div>';
 
-            const data = await fetchWithRetry("https://api.anthropic.com/v1/messages", {
+            const data = await fetchWithRetry(""https://ia-estudio-backend.vercel.app/api/analyze", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -3805,7 +3805,7 @@ Generado con: Estudio Diario - Rememoración Activa`;
             `;
             
             try {
-                const response = await fetchWithRetry("https://api.anthropic.com/v1/messages", {
+                const response = await fetchWithRetry("https://ia-estudio-backend.vercel.app/api/analyze", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
@@ -3902,7 +3902,7 @@ return;
             `;
             
             try {
-                const response = await fetchWithRetry("https://api.anthropic.com/v1/messages", {
+                const response = await fetchWithRetry("https://ia-estudio-backend.vercel.app/api/analyze", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
@@ -4000,7 +4000,7 @@ return;
             container.scrollTop = container.scrollHeight;
             
             try {
-                const response = await fetchWithRetry("https://api.anthropic.com/v1/messages", {
+                const response = await fetchWithRetry("https://ia-estudio-backend.vercel.app/api/analyze", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
@@ -4285,7 +4285,7 @@ return;
             output.innerHTML = `<div style="background: white; border: 2px solid #059669; border-radius: 12px; padding: 1.5rem; margin-top: 1rem; text-align: center;"><div style="font-size: 2rem; margin-bottom: 0.5rem;">🤖</div>Generando...</div>`;
             
             try {
-                const response = await fetchWithRetry("https://api.anthropic.com/v1/messages", {
+                const response = await fetchWithRetry("https://ia-estudio-backend.vercel.app/api/analyze", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
@@ -4334,7 +4334,7 @@ return;
             feedback.innerHTML = `<div style="margin-top: 1rem; text-align: center;">🤖 Analizando...</div>`;
             
             try {
-                const response = await fetchWithRetry("https://api.anthropic.com/v1/messages", {
+                const response = await fetchWithRetry("https://ia-estudio-backend.vercel.app/api/analyze", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
@@ -4384,7 +4384,7 @@ return;
             container.scrollTop = container.scrollHeight;
             
             try {
-                const response = await fetchWithRetry("https://api.anthropic.com/v1/messages", {
+                const response = await fetchWithRetry("https://ia-estudio-backend.vercel.app/api/analyze", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
