@@ -13,7 +13,7 @@
         // ============================================
         
         // OPCIÓN 1: Pega tu API Key aquí (más fácil)
-        const GROK_API_KEY = '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'; // Reemplaza con tu clave de https://console.x.ai
+        const groqApiKey = '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'; // Reemplaza con tu clave de https://console.x.ai
         
         // OPCIÓN 2: La app te pedirá la clave la primera vez (más seguro)
         // Déjala como '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' para que la app te pida la clave
@@ -21,8 +21,8 @@
         // Helper para obtener la API Key
         function getGrokApiKey() {
             // Si ya está configurada en el código, usarla
-            if (GROK_API_KEY && GROK_API_KEY !== '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') {
-                return GROK_API_KEY;
+            if (groqApiKey && groqApiKey !== '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') {
+                return groqApiKey;
             }
             
             // Si no, buscar en localStorage
